@@ -2,13 +2,9 @@ import { Component } from 'react'
 import './App.css';
 
 class App extends Component {
-  // local state
-  constructor(){ // available on all class components, when "constructed"
-    super();  // calls any other underlying classes you are calling with your method
-    
-    // this is referencing THIS class
-    // JavaScript knows a change by referencing a new memory object
-    // Object.assign({}, obj1)
+  constructor(){
+    super(); 
+  
     this.state = {
       monsters: [
         {
@@ -24,9 +20,8 @@ class App extends Component {
     }
   }
 
-  // this is what you are RENDERING
-  render() {
 
+render() {
     return (
       <div className="App">
           {
